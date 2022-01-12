@@ -4,7 +4,8 @@ import {
   HomeContainer,
   HomeCTAContainer,
   EventsCarousel,
-  SigninContainer
+  SigninContainer,
+  ContentContainer,
 } from "../styles/Home";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -81,6 +82,18 @@ const Home: NextPage = () => {
             </div>
           </Slider>
         </EventsCarousel>
+        <ContentContainer>
+          <div>
+            <p className="main">
+              Let us do the <br /> hard work
+            </p>
+            <p className="secondary">
+              Bukedit finds all the service providers
+              <br />
+              you need for your specific event
+            </p>
+          </div>
+        </ContentContainer>
       </HomeContainer>
       <Modal
         show={show}
@@ -89,16 +102,16 @@ const Home: NextPage = () => {
         centered
       >
         <Modal.Body>
-          <SigninContainer className="signin-form" >
-          <h1>Sign in or Register</h1>
-          <input placeholder="Email" type="email" />
-          <input placeholder="Password" type="password" />
-          <button type="button">Sign in</button>
-          <p className="forgot-password">Forgot Password ?</p>
-          <hr />
-          <p className='new-account'>
-            Don’t have an account? <span>Sign Up</span>
-          </p>
+          <SigninContainer className="signin-form">
+            <h1>Sign in or Register</h1>
+            <input placeholder="Email" type="email" />
+            <input placeholder="Password" type="password" />
+            <button type="button">Sign in</button>
+            <p className="forgot-password">Forgot Password ?</p>
+            <hr />
+            <p className="new-account">
+              Don’t have an account? <span>Sign Up</span>
+            </p>
           </SigninContainer>
         </Modal.Body>
       </Modal>

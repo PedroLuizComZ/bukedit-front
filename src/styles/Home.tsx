@@ -153,3 +153,34 @@ export const SigninContainer = styled.form`
     }
   }
 `;
+
+export const ContentContainer = styled.div`
+  background-color: #3870be;
+  min-height: 300px;
+  padding: 100px 10%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  div {
+    width: 49%;
+  }
+
+  p.main {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 100%;
+    color: #000000;
+    margin-bottom: 50px;
+  }
+
+  p.secondary {
+    font-family: Kohinoor Telugu;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 140%;
+    color: #ffffff;
+  }
+`;
